@@ -1,0 +1,7 @@
+---
+  - hosts: db
+    tasks:
+      - name: Installs mysql on Database servers
+        apt: pkg=mysql-server state=present
+    vars:
+      ansible_python_interpreter: /usr/bin/python3
